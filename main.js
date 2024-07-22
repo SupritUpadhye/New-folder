@@ -56,17 +56,4 @@ const courses = [
 ];
 
 const coursesContainer = document.getElementById('courses');
-courses.forEach(course => {
 
-    const card = document.createElement('div');
-    card.className = 'col-md-3 mb-4';
-    card.innerHTML = `<div class="card shadow" style="width: 100%;">
-            <img src="${course.ImageUrl}" class="card-img-top" alt="${course.Name}">
-            <div class="card-body
-            <h5 class="card-title">${course.Name}</h5>
-            <p class="card-text">${course.ShortDesc}</p>
-            <a href="#" class="btn btn-primary">View</a>
-            </div>
-        </div>`;
-    coursesContainer.appendChild(card);
-});
